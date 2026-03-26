@@ -5,6 +5,7 @@ public class Empregado {
     private double salario;
     private double comissao;
     private double bonus;
+    private String cpf;
     private String sexo;
 
     public Empregado(String nome, int idade, int tipo, double salario, double comissao, double bonus, String sexo){
@@ -80,6 +81,17 @@ public class Empregado {
     public int getIdade() {
         return idade;
     }
+
+    public void setCPF(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getCPF() {
+        return this.cpf;
+    }
+    
+}
+
 
     public String getSexo() {
         return sexo;
