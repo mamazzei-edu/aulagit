@@ -5,14 +5,16 @@ public class Empregado {
     private double salario;
     private double comissao;
     private double bonus;
+    private String sexo;
 
-    public Empregado(String nome, int idade, int tipo, double salario, double comissao, double bonus){
+    public Empregado(String nome, int idade, int tipo, double salario, double comissao, double bonus, String sexo){
         this.nome = nome;
         this.idade = idade;
         this.tipo = tipo;
         this.salario = salario;
         this.comissao = comissao;
         this.bonus = bonus;
+        this.sexo = sexo;
     }
 
     public double calcularSalario() {
@@ -77,5 +79,12 @@ public class Empregado {
 
     public int getIdade() {
         return idade;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
     }
 }
