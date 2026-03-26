@@ -5,6 +5,7 @@ public class Empregado {
     private double salario;
     private double comissao;
     private double bonus;
+    private String cpf;
 
     public Empregado(String nome, int idade, int tipo, double salario, double comissao, double bonus){
         this.nome = nome;
@@ -78,4 +79,13 @@ public class Empregado {
     public int getIdade() {
         return idade;
     }
+
+    public void setCPF(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getCPF() {
+        return this.cpf;
+    }
+    
 }
