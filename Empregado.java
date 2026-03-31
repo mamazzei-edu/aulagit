@@ -8,6 +8,13 @@ public class Empregado {
     private String cpf;
     private String sexo;
 
+
+    // public Empregado (String nome){
+    //     this.nome = nome;
+    // }
+
+
+
     public Empregado(String nome, int idade, int tipo, double salario, double comissao, double bonus, String sexo){
         this.nome = nome;
         this.idade = idade;
@@ -90,7 +97,7 @@ public class Empregado {
         return this.cpf;
     }
     
-}
+
 
 
     public String getSexo() {
